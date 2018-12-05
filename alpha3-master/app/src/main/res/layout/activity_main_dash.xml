@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityDash">
+
+       <!--  xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteY="81dp">
+         -->
+
+ <android.support.constraint.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="122dp" />
+
+ <Button
+     android:id="@+id/Add_New"
+     android:layout_width="405dp"
+     android:layout_height="60dp"
+     android:layout_marginTop="130dp"
+     android:background="#314b7b"
+     android:text="Add/Update Product"
+     android:textColor="@color/common_google_signin_btn_text_dark_default"
+     android:textStyle="bold"
+     android:typeface="sans"
+     app:layout_constraintBottom_toTopOf="@+id/Repair_request"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     app:layout_constraintVertical_chainStyle="packed"
+     tools:text="Add/Update Product"
+     tools:textSize="24sp" />
+
+
+ <Button
+     android:id="@+id/Repair_request"
+     android:layout_width="431dp"
+     android:layout_height="60dp"
+     android:layout_marginTop="8dp"
+     android:layout_marginBottom="8dp"
+     android:background="#314b7b"
+     android:text="Repair Request"
+     android:textColor="@color/common_google_signin_btn_text_dark_default"
+     android:textStyle="bold"
+     android:typeface="sans"
+     app:layout_constraintBottom_toTopOf="@+id/Retire_request"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/Add_New"
+     tools:textSize="24sp" />
+
+    <Button
+        android:id="@+id/Retire_request"
+        android:layout_width="426dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:background="#314b7b"
+        android:text="Barcode Reader"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textStyle="bold"
+        android:typeface="sans"
+        app:layout_constraintBottom_toTopOf="@+id/Support"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Repair_request"
+        tools:text="Barcode Reader"
+        tools:textSize="24sp" />
+
+ <Button
+     android:id="@+id/Support"
+     android:layout_width="401dp"
+     android:layout_height="60dp"
+     android:layout_marginBottom="70dp"
+     android:background="#314b7b"
+     android:text="Support"
+     android:textColor="@color/common_google_signin_btn_text_dark_default"
+     android:textStyle="bold"
+     android:typeface="sans"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintStart_toStartOf="parent"
+     app:layout_constraintTop_toBottomOf="@+id/Retire_request"
+     tools:text="SUPPORT"
+     tools:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/Products"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="32dp"
+        android:text="Main Menu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/Add_New"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        tools:text="Main Menu" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/Add_New"
+        app:layout_constraintEnd_toStartOf="@+id/Products"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+</android.support.constraint.ConstraintLayout>

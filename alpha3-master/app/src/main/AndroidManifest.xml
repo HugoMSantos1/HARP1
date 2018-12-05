@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="harp.medpick.com.inventory">
+
+
+    <!-- These are app permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:name="android.support.multidex.MultiDexApplication"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ChooserActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<!--  Firebase Activity -->
+		<activity 
+		    android:name=".MainActivity" 
+			android:label="@string/app_name" />
+        <activity
+            android:name=".GoogleSignInActivity"
+            android:label="@string/label_google_sign_in" />
+        <activity
+            android:name=".FacebookLoginActivity"
+            android:label="@string/label_facebook_login" />
+        <activity
+            android:name=".EmailPasswordActivity"
+            android:label="@string/label_emailpassword"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- Facebook Configuration -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"
+            tools:replace="android:value" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:replace="android:theme" />
+			
+		<!-- Buttons ETC -->
+        <activity
+            android:name=".MainActivityDash"
+            android:label="@string/app_name" />
+      
+		<activity
+            android:name=".AddNewProd"
+            android:label="@string/title_activity_add_new_prod"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SupportActivity"
+            android:label="SupportActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Repair_Request_page" />
+        <activity android:name=".Retire_Product_Page"/>
+        <activity android:name=".InventoryActivity"/>
+
+
+
+		<!-- Barcode activity -->
+		 <activity android:name=".BarcodeReader"
+             android:label="@string/BarcodeReader"
+            android:screenOrientation="landscape" />
+
+    </application>
+
+</manifest>

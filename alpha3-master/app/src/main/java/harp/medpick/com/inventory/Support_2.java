@@ -1,0 +1,13 @@
+package harp.medpick.com.inventory;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class Support_2 extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_support_2);
+    }
+}

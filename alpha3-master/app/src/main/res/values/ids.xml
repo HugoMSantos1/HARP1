@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Your Facebook App ID.
+    -->
+    <!--  TODO(developer): REPLACE -->
+    <string name="facebook_app_id">262888954301308</string>
+
+
+</resources>
